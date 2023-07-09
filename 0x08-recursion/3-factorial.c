@@ -12,11 +12,21 @@
 
 int factorial(int n)
 {
+	int facto = n;
+
 	if (n < 0)
+	{
 		return (-1);
-	else if (n >= 0 && n <= 1)
+	}
+
+	else if (n == 0)
+	{
 		return (1);
-	int facto *= (n * factorial(n - 1));
-	return (facto);
+	}
+	else
+	{
+		facto *= factorial(n - 1);
+	       	return (facto);
+	}
 
 }
