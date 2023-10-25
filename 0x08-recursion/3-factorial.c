@@ -13,16 +13,17 @@
 
 int factorial(int n)
 {
-    if (n < 0) 
-{
-        return -1; // Error: Negative input
-} 
-else if (n == 0) 
-{
-        return 1;  // Factorial of 0 is 1
-} else 
-{
-        return n * factorial(n - 1);
+	int result = n;
+
+	if (n < 0)
+		return (-1);
+
+	else if (n >= 0 && n <= 1)
+		return (1);
+
+	result *= factorial(n - 1);
+
+	return (result);
 }
-}
+
 
