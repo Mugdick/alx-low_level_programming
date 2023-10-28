@@ -41,7 +41,7 @@ int coinChanger(int i)
 
 /**
  * main - program that prints the minimum number of coins
-	make change for an amount of money.
+*	make change for an amount of money.
  * @argc: Number of command line arguments
  * @argv: Array name
  * Return: 0 if exactly 1 argument is passed into this program, 1 otherwise
