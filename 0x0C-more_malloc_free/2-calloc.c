@@ -12,7 +12,7 @@ include "main.h"
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *memo;
-	char *filler;
+	char *fill;
 	unsigned int index;
 
 	if (nmemb == 0 || size == 0)
@@ -23,10 +23,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (memo == NULL)
 		return (NULL);
 
-	filler = memo;
+	fill = memo;
 
 	for (index = 0; index < (size * nmemb); index++)
-		filler[index] = '\0';
+		fill[index] = '\0';
 
 	return (memo);
 }
