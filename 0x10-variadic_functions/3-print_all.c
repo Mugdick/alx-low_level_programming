@@ -9,29 +9,29 @@ void print_string(va_list arg);
 void print_all(const char * const format, ...);
 
 /**
- * print_char - Prints a character.
- * @arg:A list of arguments pointing
- *	to the character to be printed.
+ * print_char - Prints a char.
+ * @arg: A list of arguments pointing to
+ *       the character to be printed.
  */
 void print_char(va_list arg)
 {
-	char character;
+	char letter;
 
-	character = va_arg(arg, int);
-	printf("%c", character);
+	letter = va_arg(arg, int);
+	printf("%c", letter);
 }
 
 /**
- * print_int - Prints an integer.
+ * print_int - Prints an int.
  * @arg: A list of arguments pointing to
  *       the integer to be printed.
  */
 void print_int(va_list arg)
 {
-	int number;
+	int num;
 
-	number = va_arg(arg, int);
-	printf("%d", number);
+	num = va_arg(arg, int);
+	printf("%d", num);
 }
 
 /**
