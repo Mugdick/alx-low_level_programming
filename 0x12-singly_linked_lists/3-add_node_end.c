@@ -4,18 +4,18 @@
 #include <string.h>
 
 /**
- * add_node_end - Adds a new node at the end
- *                of a list_t list.
+ * add_node_end - Adds a new node at the
+*	end of a list_t list.
  * @head: A pointer the head of the list_t list.
  * @str: The string to be added to the list_t list.
+ *
  * Return: If the function fails - NULL.
  *         Otherwise - the address of the new element.
  */
-
 list_t *add_node_end(list_t **head, const char *str)
 {
 	char *dup;
-	int length;
+	int len;
 	list_t *new, *last;
 
 	new = malloc(sizeof(list_t));
@@ -29,11 +29,11 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	for (length = 0; str[length];)
-		length++;
+	for (len = 0; str[len];)
+		len++;
 
 	new->str = dup;
-	new->length = length;
+	new->len = len;
 	new->next = NULL;
 
 	if (*head == NULL)
@@ -49,3 +49,4 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	return (*head);
 }
+
