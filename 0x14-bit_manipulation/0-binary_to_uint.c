@@ -14,16 +14,16 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0;
-	int len = 0;
+	int length = 0;
 
-	if (b[len] == '\0')
+	if (b[length] == '\0')
 		return (0);
 
-	while ((b[len] == '0') || (b[len] == '1'))
+	while ((b[length] == '0') || (b[length] == '1'))
 	{
 		num <<= 1;
-		num += b[len] - '0';
-		len++;
+		num += b[length] - '0';
+		length++;
 	}
 
 	return (num);
